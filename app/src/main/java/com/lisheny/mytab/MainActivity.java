@@ -1,5 +1,6 @@
 package com.lisheny.mytab;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -7,10 +8,9 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.lisheny.mytab.base.BaseActivity;
 import com.lisheny.mytab.widget.BottomNavigationViewEx;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
