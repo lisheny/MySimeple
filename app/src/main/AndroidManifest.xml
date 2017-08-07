@@ -1,23 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.lisheny.mytab">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
+        android:name=".mvp.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".login.LoginActivity">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".modules.home.GuidleActivity"
+            android:theme="@style/AppTheme">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action
+                    android:screenOrientation="portrait"
+                    android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.expand.ExpandActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.expand.ExpandDetailsActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.expand.ExpandInstallActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.filter.FilterActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.face.FaceActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.change.ChangeActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.login.LoginActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.register.RegisterActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.filter.MyFilterActivity" />
 
-        <activity android:name=".MainActivity"/>
+        <!-- 二维码 -->
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.WebViewActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".modules.home.HomeActivity"/>
     </application>
 
 </manifest>

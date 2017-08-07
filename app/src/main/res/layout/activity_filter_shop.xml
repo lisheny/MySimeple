@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_filter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/right_content_margin"
+        android:layout_marginRight="@dimen/right_content_margin"
+        android:text="@string/filter_shop"
+        android:textColor="@color/write"
+        android:textSize="@dimen/title" />
+
+    <TextView
+        android:id="@+id/tv_filter_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/right_content_margin"
+        android:layout_marginRight="@dimen/right_content_margin"
+        android:layout_marginTop="4dp"
+        android:text="@string/headset_connect"
+        android:textColor="@color/write"
+        android:textSize="@dimen/menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_filter_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/all"
+            android:textColor="@color/write" />
+
+        <TextView
+            android:id="@+id/tv_filter_recently"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:padding="8dp"
+            android:text="@string/new_add"
+            android:textColor="@color/write" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="@dimen/margin"
+            android:id="@+id/recy_filter_list"
+            android:dividerHeight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.lisheny.mytab.widget.TagGroup
+            android:visibility="gone"
+            android:id="@+id/tag_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            app:atg_backgroundColor="@color/colorAccent"
+            app:atg_borderColor="@color/colorAccent"
+            app:atg_textColor="@color/write"
+            app:atg_textSize="@dimen/body"
+            app:atg_verticalPadding="8dp">
+
+        </com.lisheny.mytab.widget.TagGroup>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_goto_myfilter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_list_item_margin"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/small_list_item_margin"
+        android:background="@drawable/shop_shape_bg_filter"
+        android:padding="@dimen/itemize_margin"
+        android:text="@string/my_filter"
+        android:textColor="@color/write" />
+
+</LinearLayout>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_change_name"
+            android:title="@string/change_usename" />
+
+        <item
+            android:id="@+id/nav_change_number"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/change_phone" />
+
+        <item
+            android:id="@+id/nav_change_pwd"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/change_pwd" />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_update_app"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/app_update" />
+        <item
+            android:id="@+id/nav_update_headset"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/headset_update" />
+
+        <item
+            android:id="@+id/nav_reset_headset"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/reset_headset" />
+        <item
+            android:id="@+id/nav_clean"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/clean_cache" />
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/call_us" />
+        <item
+            android:id="@+id/nav_agreement"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/agreement" />
+    </group>
+</menu>

@@ -1,7 +1,86 @@
 <resources>
-    <string name="app_name">MyTab</string>
-
     <string name="music">Music</string>
     <string name="backup">Backup</string>
     <string name="friends">Friends</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--modules home-->
+    <string name="app_name">简听</string>
+    <string name="home_title">简小听</string>
+
+
+    <!--登录模块-->
+    <string name="user_login">用户登录</string>
+    <string name="welcome_to_our">欢迎来到简听科技</string>
+    <string name="input_phone_or_email">请输入手机号码/邮箱</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="register">注册账号</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="login_Failure">登陆失败</string>
+    <string name="login_ing">登陆中。。。</string>
+
+    <!--注册模块-->
+    <string name="input_email">请输入电子邮箱</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_code">验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="input_alias">别名</string>
+    <string name="input_username_null">输入用户名为空</string>
+    <string name="input_pwd_null">密码为空</string>
+    <string name="input_code_null">验证码为空</string>
+    <string name="input_ailas_null">别名为空</string>
+
+    <!--修改模块-->
+    <string name="change_usename">修改用户名</string>
+    <string name="usename">用户名</string>
+    <string name="new_pwd">新密码</string>
+    <string name="submit">提交</string>
+    <string name="input_new_phone">输入新手机号</string>
+    <string name="input_old_pwd">输入旧密码</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="change_data_null">修改内容为空</string>
+
+    <!--主页-->
+    <string name="filter">滤镜</string>
+    <string name="face">表情</string>
+    <string name="change_phone">更换手机号</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="app_update">检查app更新</string>
+    <string name="headset_update">检查耳机更新</string>
+    <string name="reset_headset">重新匹配耳机</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="call_us">联系客服</string>
+    <string name="agreement">用户协议</string>
+    <string name="clean_cache_yes_or_no">确认清楚缓存吗？</string>
+    <string name="will_lose_date">你将丢失所有未同步数据</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="ble_id_null">设备ID为空</string>
+    <string name="loading">正在加载中...</string>
+    <string name="network_failure">网络请求失败</string>
+    <string name="network_success">网络请求成功</string>
+    <string name="data_is_empty">数据为空</string>
+
+    <!--滤镜模块-->
+    <string name="filter_shop">滤镜商店</string>
+    <string name="headset_connect">耳机已连接</string>
+    <string name="headset_connect_failure">耳机连接失败</string>
+    <string name="all">全部</string>
+    <string name="new_add">最近添加</string>
+    <string name="my_filter">我的滤镜</string>
+
+    <!--表情模块-->
+    <string name="face_shop">表情商店</string>
+
+    <!--拓展应用模块-->
+    <string name="expand">拓展应用</string>
+    <string name="apps_name">应用名字</string>
+    <string name="version">版本号：1.0.0</string>
+    <string name="start_use">启用</string>
+    <string name="install_finish">安装完成</string>
+
 </resources>

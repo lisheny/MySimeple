@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_expand_install_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/right_content_margin"
+        android:layout_marginRight="@dimen/right_content_margin"
+        android:text="@string/install_finish"
+        android:textColor="@color/write"
+        android:textSize="@dimen/title" />
+
+    <TextView
+        android:id="@+id/tv_expand_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/right_content_margin"
+        android:layout_marginRight="@dimen/right_content_margin"
+        android:layout_marginTop="4dp"
+        android:text="@string/version"
+        android:textColor="@color/write"
+        android:textSize="@dimen/menu" />
+
+    <ProgressBar
+        android:id="@+id/pgb_expand_install"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/right_content_margin"
+        android:layout_marginTop="@dimen/small_list_item_margin"
+        android:max="100"
+        android:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_expand_install_state"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/right_content_margin"
+        android:layout_marginRight="@dimen/right_content_margin"
+        android:layout_marginTop="4dp"
+        android:text="@string/install_finish"
+        android:textColor="@color/write"
+        android:textSize="@dimen/menu" />
+
+
+    <Button
+        android:id="@+id/btn_expand_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_list_item_margin"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/small_list_item_margin"
+        android:background="@drawable/home_shape_bg_filter"
+        android:padding="@dimen/itemize_margin"
+        android:text="@string/start_use"
+        android:textColor="@color/write" />
+
+</LinearLayout>
+

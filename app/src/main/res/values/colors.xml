@@ -5,5 +5,11 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="write">#ffffff</color>
-    <color name="black">#666666</color>
+    <color name="black">#000000</color>
+    <color name="app_bg">#070b1a</color>
+    <color name="app_bg2">#313131</color>
+
+    <color name="tab_check">#ffffff</color>
+    <color name="tab_uncheck">#c3c3c3</color>
+
 </resources>

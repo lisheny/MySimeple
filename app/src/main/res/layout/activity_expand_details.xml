@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="@dimen/margin">
+
+                <ImageView
+                    android:id="@+id/iv_expand_app_logo"
+                    android:layout_width="@dimen/big_title_margin"
+                    android:layout_height="@dimen/big_title_margin"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_expand_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/itemize_margin"
+                    android:layout_toEndOf="@+id/iv_expand_app_logo"
+                    android:text="@string/apps_name"
+                    android:textColor="@color/write"
+                    android:textSize="@dimen/title" />
+
+                <TextView
+                    android:id="@+id/tv_expand_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_expand_app_name"
+                    android:layout_marginLeft="@dimen/itemize_margin"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@+id/iv_expand_app_logo"
+                    android:text="@string/version"
+                    android:textColor="@color/write"
+                    android:textSize="@dimen/menu" />
+            </RelativeLayout>
+
+
+            <TextView
+
+                android:id="@+id/tv_expand_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toEndOf="@+id/imageView"
+                android:text="可能是被最近的天气热到了，很多女星们也都剪了短发，可能是被最近的天气热到了，很多女星们也都剪了短发，可能是被最近的天气热到了，很多女星们也都剪了短发，可能是被最近的天气热到了，很多女星们也都剪了短发，还别说短发风还真是检验女神的另一种标准呢~前两天，有关娜扎短发的话题，还直接冲上了热搜！"
+                android:textColor="@color/write"
+                android:textSize="@dimen/body" />
+
+            <Button
+                android:id="@+id/btn_expand_install"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/right_content_margin"
+                android:layout_margin="@dimen/margin"
+                android:background="@drawable/home_shape_bg_filter"
+                android:padding="@dimen/itemize_margin"
+                android:text="@string/start_use"
+                android:textColor="@color/write" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:src="@mipmap/ic_test" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

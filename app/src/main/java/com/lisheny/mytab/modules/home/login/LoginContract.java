@@ -1,9 +1,8 @@
-package com.lisheny.mytab.login;
+package com.lisheny.mytab.modules.home.login;
 
+import com.lisheny.mytab.javabeens.UserBeen;
 import com.lisheny.mytab.mvp.BasePresenter;
 import com.lisheny.mytab.mvp.BaseView;
-
-import java.util.Objects;
 
 /**
  * MVPPlugin
@@ -12,7 +11,7 @@ import java.util.Objects;
 
 public class LoginContract {
     interface View extends BaseView {
-        void loginSuccess(Objects user);
+        void loginSuccess(UserBeen userBeen);
 
         void loginFailed(String message);
     }

@@ -2,6 +2,9 @@ package com.lisheny.mytab.mvp;
 
 import android.app.Application;
 
+import com.blankj.utilcode.utils.Utils;
+import com.lisheny.mytab.javabeens.UserBeen;
+
 /**
  * <pre>
  *     author : lisheny
@@ -12,6 +15,8 @@ import android.app.Application;
  * </pre>
  */
 public class BaseApplication extends Application {
+
+    private static UserBeen userBeen;
 
     private static BaseApplication appContext;
 
@@ -26,5 +31,16 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         appContext = this;
+
+        //工具库初始化
+        Utils.init(appContext);
+    }
+
+    public static UserBeen getUseBeen() {
+        return userBeen;
+    }
+
+    public static void setUseBeen(UserBeen userBeen) {
+        BaseApplication.userBeen = userBeen;
     }
 }

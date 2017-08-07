@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lisheny.mytab.modules.home.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginBottom="68dp"
+        android:id="@+id/recy_home_list"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/itemize_margin"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="@dimen/right_content_margin"
+        android:layout_marginLeft="@dimen/right_content_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_margin">
+
+        <Button
+            android:id="@+id/btn_home_filter"
+            android:layout_marginRight="@dimen/itemize_margin"
+            android:textColor="@color/write"
+            android:background="@drawable/home_shape_bg_filter"
+            android:padding="@dimen/itemize_margin"
+            android:layout_weight="1"
+            android:text="@string/filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_home_face"
+            android:layout_marginLeft="@dimen/itemize_margin"
+            android:textColor="@color/write"
+            android:background="@drawable/home_shape_bg_face"
+            android:padding="@dimen/itemize_margin"
+            android:layout_weight="1"
+            android:text="@string/face"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>
